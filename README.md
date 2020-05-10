@@ -18,7 +18,7 @@ Attribute | Description
 --- | ---
 Goal | Keep the tennis ball in play.
 Goal (RL) | Maximize expected cumulative reward.
-Observations | `Box(8)`, eight continuous variables correspond to the position and velocity of the ball and racket. Each agent receives its own local observation.
+Observations | `Box(8)`, eight continuous variables correspond to the position and velocity of the ball and racket. Each agent receives its own local observation. The actual observation is a stacked vector of three observations, thus resulting in a `Box(24)` continuous vector observation.
 Actions | `Box(2)`, two continuous variables correspond to the movement in direction of the net (positive or negative) and to a jumping movement.
 Rewards | +0.1 for hitting the ball over the net <br> -0.01 for hitting the ball out of bounds
 
