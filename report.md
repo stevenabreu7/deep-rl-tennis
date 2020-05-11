@@ -27,27 +27,6 @@ The task is episodic and ends whenever the ball touches the ground. In order to 
 - The maximum of these two (potentially different) scores is taken.
 - This yields a single **score** for each episode.
 
-## Installation
-
-This project is using Python 3.6.3, make sure the following packages are installed:
-
-```bash
-pip install numpy matplotlib torch setuptools bleach==1.5.0 unityagents
-```
-
-Download the environment from one of the links below:
-- Linux: [download](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
-- Mac OSX: [download](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
-- Windows (32-bit): [download](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
-- Windows (64-bit): [download](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
-- Headless (Linux): [download](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip)
-
-Place the downloaded file(s) in the `src/exec/` folder, and unzip (or decompress) the file. Make sure to update the `file_name` parameter in the code when loading the environment:
-
-```python
-env = UnityEnvironment(file_name="src/exec/...")
-```
-
 ## Training instructions
 
 Follow the instructions in [`training.ipynb`](./training.ipynb) to see how an agent can be trained.
