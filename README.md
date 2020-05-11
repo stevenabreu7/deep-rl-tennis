@@ -58,6 +58,28 @@ This is a multi-agent environment. However, the goal of either agent can be full
 
 ![learning plot](./assets/score_plot.png)
 
+The hyperparameters used are shown in the following table:
+
+Hyperparameter | Value
+--- | ---
+Network layers | Two hidden layers using ReLU, 256x128. Tanh in the output layer.
+Buffer size | 1e5
+Batch size | 512
+LR for actor | 1e-4
+LR for critic | 1e-3
+Gamma | 0.99
+Tau | 1e-3
+Noise mean | 0.0
+Noise sigma | 0.2
+Noise theta | 0.15
+Noise decay | None
+Noise min. mean | n/a
+Weight decay actor | 0.0
+Weight decay critic | 0.0
+Soft update freq. | 1
+Hard update freq. | None
+Gradient clipping | False
+
 A demo of this trained agent can be run from [`demo.ipynb`](./demo.ipynb).
 
 ## Further Work
